@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-basic-deployment
+  labels:
+    app: spring-basic-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: spring-basic-app
+  template:
+    metadata:
+      labels:
+        app: spring-basic-app
+    spec:
+      containers:
+      - name: spring-basic-app
+        image: navpreetmattu/spring-basic-app:latest
+        ports:
+        - containerPort: 8080
