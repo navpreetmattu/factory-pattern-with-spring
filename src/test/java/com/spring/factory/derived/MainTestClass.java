@@ -4,6 +4,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
@@ -38,6 +39,7 @@ class MainTestClass {
 	}
 
 	@Test
+	@Disabled
 	void runAll2() {
 
 		String result1 = testAbstractMethod1();

@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
@@ -39,6 +40,7 @@ class ClassSerivceTest {
 	}
 
 	@Test
+	@Disabled
 	void testDoStuff() {
 
 		when(classFactory.getFirstClass(ClassType.valueOf("DERIVEDCLASS11"))).thenReturn(new DerivedClass11());
