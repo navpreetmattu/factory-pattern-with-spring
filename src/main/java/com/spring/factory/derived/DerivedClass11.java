@@ -31,7 +31,7 @@ public class DerivedClass11 extends BaseClass1 {
 
 	@Override
 	public String toString() {
-		return "DerivedClass11 " + dto + "count is " + count + " i is " + injClass.getObject().getI();
+		return "DerivedClass11Nav " + dto + "count is " + count + " i is " + injClass.getObject().getI();
 	}
 
 }
